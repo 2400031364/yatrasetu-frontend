@@ -1,0 +1,182 @@
+// Fallback content shown instantly while the Spring Boot API loads (or if it
+// isn't running yet during frontend-only development). Shapes match the
+// backend DTOs exactly so swapping to live data is a no-op.
+
+export const CATEGORIES = [
+  { key: 'heritage', label: 'Heritage & Forts' },
+  { key: 'hills', label: 'Hills & Treks' },
+  { key: 'beaches', label: 'Coast & Islands' },
+  { key: 'spiritual', label: 'Spiritual' },
+  { key: 'wildlife', label: 'Wildlife' },
+  { key: 'offbeat', label: 'Offbeat' },
+]
+
+export const DESTINATIONS = [
+  {
+    id: 1, name: 'Jaipur', state: 'Rajasthan', category: 'heritage',
+    tagline: 'The Pink City of amber forts and mirrored palaces',
+    rating: 4.7, reviewCount: 2140, priceFrom: 2200,
+    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1200',
+    bestSeason: 'Oct – Mar', lat: 26.9124, lng: 75.7873,
+  },
+  {
+    id: 2, name: 'Munnar', state: 'Kerala', category: 'hills',
+    tagline: 'Rolling tea gardens folded into misty hills',
+    rating: 4.8, reviewCount: 1876, priceFrom: 1800,
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1200',
+    bestSeason: 'Sep – May', lat: 10.0889, lng: 77.0595,
+  },
+  {
+    id: 3, name: 'Gokarna', state: 'Karnataka', category: 'beaches',
+    tagline: 'Quiet coves and cliffside trails away from the crowds',
+    rating: 4.6, reviewCount: 932, priceFrom: 1500,
+    image: 'https://images.unsplash.com/photo-1590123047424-1a74a2058afe?q=80&w=1200',
+    bestSeason: 'Oct – Mar', lat: 14.5479, lng: 74.3188,
+  },
+  {
+    id: 4, name: 'Varanasi', state: 'Uttar Pradesh', category: 'spiritual',
+    tagline: 'Ghats, lamplit rituals and the pulse of the Ganges',
+    rating: 4.7, reviewCount: 2540, priceFrom: 1600,
+    image: 'https://images.unsplash.com/photo-1561361058-c24cecae35ca?q=80&w=1200',
+    bestSeason: 'Nov – Feb', lat: 25.3176, lng: 82.9739,
+  },
+  {
+    id: 5, name: 'Ranthambore', state: 'Rajasthan', category: 'wildlife',
+    tagline: 'Tiger trails through ruined forts and dry deciduous forest',
+    rating: 4.5, reviewCount: 764, priceFrom: 3200,
+    image: 'https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?q=80&w=1200',
+    bestSeason: 'Oct – Jun', lat: 26.0173, lng: 76.5026,
+  },
+  {
+    id: 6, name: 'Spiti Valley', state: 'Himachal Pradesh', category: 'offbeat',
+    tagline: 'A cold desert of monasteries under impossible skies',
+    rating: 4.9, reviewCount: 511, priceFrom: 4200,
+    image: 'https://images.unsplash.com/photo-1626621331169-5f34be280831?q=80&w=1200',
+    bestSeason: 'May – Sep', lat: 32.2461, lng: 78.0349,
+  },
+  {
+    id: 7, name: 'Hampi', state: 'Karnataka', category: 'heritage',
+    tagline: 'Boulder-strewn ruins of a vanished empire',
+    rating: 4.8, reviewCount: 1042, priceFrom: 1400,
+    image: 'https://images.unsplash.com/photo-1600100397608-f256a01b0abe?q=80&w=1200',
+    bestSeason: 'Oct – Feb', lat: 15.335, lng: 76.46,
+  },
+  {
+    id: 8, name: 'Andaman Islands', state: 'Andaman & Nicobar', category: 'beaches',
+    tagline: 'Turquoise water over coral, far from the mainland',
+    rating: 4.8, reviewCount: 1330, priceFrom: 5200,
+    image: 'https://images.unsplash.com/photo-1589979481223-deb893043163?q=80&w=1200',
+    bestSeason: 'Nov – May', lat: 11.7401, lng: 92.6586,
+  },
+  {
+    id: 9, name: 'Agra', state: 'Uttar Pradesh', category: 'heritage',
+    tagline: 'Home to the Taj Mahal and the Agra Fort on the Yamuna',
+    rating: 4.6, reviewCount: 0, priceFrom: 2400,
+    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1200',
+    bestSeason: 'Oct – Mar', lat: 27.1751, lng: 78.0421,
+  },
+  {
+    id: 10, name: 'Shimla', state: 'Himachal Pradesh', category: 'hills',
+    tagline: 'Colonial-era hill capital along a pine-covered ridge',
+    rating: 4.6, reviewCount: 0, priceFrom: 2600,
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1200',
+    bestSeason: 'Mar – Jun', lat: 31.1048, lng: 77.1734,
+  },
+  {
+    id: 11, name: 'Manali', state: 'Himachal Pradesh', category: 'hills',
+    tagline: 'Gateway to the high Himalayas and Solang Valley',
+    rating: 4.6, reviewCount: 0, priceFrom: 2800,
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1200',
+    bestSeason: 'Mar – Jun', lat: 32.2432, lng: 77.1892,
+  },
+  {
+    id: 12, name: 'Darjeeling', state: 'West Bengal', category: 'hills',
+    tagline: 'Tea estates, toy trains and Kanchenjunga sunrises',
+    rating: 4.6, reviewCount: 0, priceFrom: 2200,
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1200',
+    bestSeason: 'Mar – May', lat: 27.0410, lng: 88.2663,
+  },
+  {
+    id: 13, name: 'Goa', state: 'Goa', category: 'beaches',
+    tagline: "India's beach capital, from Baga's parties to Palolem's calm",
+    rating: 4.6, reviewCount: 0, priceFrom: 2600,
+    image: 'https://images.unsplash.com/photo-1590123047424-1a74a2058afe?q=80&w=1200',
+    bestSeason: 'Nov – Feb', lat: 15.5523, lng: 73.7519,
+  },
+  {
+    id: 14, name: 'Rishikesh', state: 'Uttarakhand', category: 'spiritual',
+    tagline: 'Yoga ashrams and river rafting on the Ganges',
+    rating: 4.6, reviewCount: 0, priceFrom: 1800,
+    image: 'https://images.unsplash.com/photo-1561361058-c24cecae35ca?q=80&w=1200',
+    bestSeason: 'Sep – Apr', lat: 30.0869, lng: 78.2676,
+  },
+  {
+    id: 15, name: 'Amritsar', state: 'Punjab', category: 'spiritual',
+    tagline: 'The Golden Temple and its endless free community kitchen',
+    rating: 4.6, reviewCount: 0, priceFrom: 1700,
+    image: 'https://images.unsplash.com/photo-1561361058-c24cecae35ca?q=80&w=1200',
+    bestSeason: 'Oct – Mar', lat: 31.6200, lng: 74.8765,
+  },
+  {
+    id: 16, name: 'Ladakh', state: 'Ladakh', category: 'offbeat',
+    tagline: 'High-altitude passes, monasteries and the Pangong shoreline',
+    rating: 4.6, reviewCount: 0, priceFrom: 4800,
+    image: 'https://images.unsplash.com/photo-1626621331169-5f34be280831?q=80&w=1200',
+    bestSeason: 'May – Sep', lat: 34.1526, lng: 77.5771,
+  },
+  {
+    id: 17, name: 'Coorg', state: 'Karnataka', category: 'hills',
+    tagline: "Coffee plantations and waterfalls in Karnataka's Western Ghats",
+    rating: 4.6, reviewCount: 0, priceFrom: 2300,
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1200',
+    bestSeason: 'Oct – Mar', lat: 12.4244, lng: 75.7382,
+  },
+  {
+    id: 18, name: 'Ooty', state: 'Tamil Nadu', category: 'hills',
+    tagline: 'The Queen of the Nilgiris, with botanical gardens and lakes',
+    rating: 4.6, reviewCount: 0, priceFrom: 2000,
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1200',
+    bestSeason: 'Oct – Jun', lat: 11.4064, lng: 76.6932,
+  },
+  {
+    id: 19, name: 'Kaziranga National Park', state: 'Assam', category: 'wildlife',
+    tagline: 'The last stronghold of the one-horned rhinoceros',
+    rating: 4.6, reviewCount: 0, priceFrom: 3000,
+    image: 'https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?q=80&w=1200',
+    bestSeason: 'Nov – Apr', lat: 26.5775, lng: 93.1714,
+  },
+  {
+    id: 20, name: 'Pondicherry', state: 'Puducherry', category: 'beaches',
+    tagline: 'French Quarter streets that end at the promenade',
+    rating: 4.6, reviewCount: 0, priceFrom: 2100,
+    image: 'https://images.unsplash.com/photo-1590123047424-1a74a2058afe?q=80&w=1200',
+    bestSeason: 'Oct – Mar', lat: 11.9416, lng: 79.8083,
+  },
+]
+
+export const HOTELS = [
+  { id: 101, destinationId: 1, name: 'Haveli Amberwind', stars: 4, pricePerNight: 3400, rating: 4.6, reviewCount: 412, amenities: ['Free WiFi', 'Rooftop pool', 'Breakfast included'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 102, destinationId: 1, name: 'Zostel Jaipur', stars: 3, pricePerNight: 900, rating: 4.4, reviewCount: 850, amenities: ['Free WiFi', 'Common lounge'], image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1200' },
+  { id: 201, destinationId: 2, name: 'Tea County Resort', stars: 4, pricePerNight: 4200, rating: 4.7, reviewCount: 331, amenities: ['Mountain view', 'Bonfire', 'Free WiFi'], image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=1200' },
+  { id: 401, destinationId: 4, name: 'Ganga View Homestay', stars: 3, pricePerNight: 1500, rating: 4.5, reviewCount: 268, amenities: ['River view', 'Home-cooked meals'], image: 'https://images.unsplash.com/photo-1601701119533-fbfeb1d1a2e2?q=80&w=1200' },
+  { id: 901, destinationId: 9, name: 'Taj Vista Heritage', stars: 4, pricePerNight: 3800, rating: 4.6, reviewCount: 0, amenities: ['Taj view rooms', 'Free WiFi', 'Breakfast included'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 902, destinationId: 9, name: 'Zostel Agra', stars: 3, pricePerNight: 1000, rating: 4.5, reviewCount: 0, amenities: ['Free WiFi', 'Common lounge'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1001, destinationId: 10, name: 'Ridge View Inn', stars: 4, pricePerNight: 3200, rating: 4.6, reviewCount: 0, amenities: ['Mountain view', 'Bonfire', 'Free WiFi'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1101, destinationId: 11, name: 'Solang Pines Resort', stars: 4, pricePerNight: 3600, rating: 4.6, reviewCount: 0, amenities: ['Mountain view', 'Bonfire', 'Free WiFi'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1201, destinationId: 12, name: 'Tea Garden Bungalow', stars: 4, pricePerNight: 3300, rating: 4.6, reviewCount: 0, amenities: ['Tea garden view', 'Free WiFi'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1301, destinationId: 13, name: 'Baga Beach Resort', stars: 4, pricePerNight: 4500, rating: 4.6, reviewCount: 0, amenities: ['Beachfront', 'Pool', 'Free WiFi'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1302, destinationId: 13, name: 'Palolem Beach Huts', stars: 3, pricePerNight: 1800, rating: 4.5, reviewCount: 0, amenities: ['Beachfront', 'Hammocks'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1401, destinationId: 14, name: 'Ganga Riverside Camp', stars: 3, pricePerNight: 1800, rating: 4.5, reviewCount: 0, amenities: ['River view', 'Yoga sessions', 'Bonfire'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1501, destinationId: 15, name: 'Golden Temple View Inn', stars: 3, pricePerNight: 1900, rating: 4.5, reviewCount: 0, amenities: ['Temple view', 'Free WiFi', 'Breakfast included'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1601, destinationId: 16, name: 'Pangong Camps', stars: 3, pricePerNight: 4200, rating: 4.5, reviewCount: 0, amenities: ['Lake view', 'Bonfire', 'Home-cooked meals'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1701, destinationId: 17, name: 'Coffee Estate Homestay', stars: 4, pricePerNight: 3100, rating: 4.6, reviewCount: 0, amenities: ['Estate walks', 'Free WiFi', 'Breakfast included'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1801, destinationId: 18, name: 'Nilgiri Lake Resort', stars: 4, pricePerNight: 2900, rating: 4.6, reviewCount: 0, amenities: ['Lake view', 'Free WiFi'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 1901, destinationId: 19, name: 'Wild Grass Lodge', stars: 3, pricePerNight: 3400, rating: 4.5, reviewCount: 0, amenities: ['Safari desk', 'Free WiFi', 'Breakfast included'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+  { id: 2001, destinationId: 20, name: 'French Quarter Boutique', stars: 4, pricePerNight: 3500, rating: 4.6, reviewCount: 0, amenities: ['Heritage building', 'Free WiFi'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
+]
+
+export const REVIEWS = [
+  { id: 1, destinationId: 1, author: 'Ananya R.', rating: 5, verified: true, date: '2026-06-12', text: 'Amber Fort at sunrise, before the crowds, was worth the early alarm.' },
+  { id: 2, destinationId: 1, author: 'Kabir S.', rating: 4, verified: true, date: '2026-05-02', text: 'Old city traffic is intense, but the bazaars make up for it.' },
+  { id: 3, destinationId: 2, author: 'Meera P.', rating: 5, verified: true, date: '2026-04-18', text: 'Woke up to clouds sitting inside the valley. Unreal.' },
+]
